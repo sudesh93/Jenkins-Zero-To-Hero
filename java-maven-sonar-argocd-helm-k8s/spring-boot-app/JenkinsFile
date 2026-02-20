@@ -23,7 +23,7 @@ pipeline {
     steps {
         // Point JAVA_HOME to a Java 17 installation on the worker node
         sh '''
-        export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/bin
+        export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
         export PATH=$JAVA_HOME/bin:$PATH
         mvn sonar:sonar
         '''
